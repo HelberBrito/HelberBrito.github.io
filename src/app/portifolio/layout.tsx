@@ -4,13 +4,14 @@ export default function PortifolioLayout({children}: any) {
   return (
     <main>
       <div>
-        <nav>
-          Navegamento (layout do layout)
+        <nav class='flex mt-2'>
+          
+          <h3>Clique aqui para</h3>
           <Link 
-            href='./producao'
-            class='ml-10'
+            href='./'
+            class='ml-2 underline'
           >
-            Produção
+            VOLTAR
           </Link>
         </nav>
         {children}
