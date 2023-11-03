@@ -8,7 +8,7 @@ export default function Home() {
         Bem vindo ao meu portifólio!
       </h1>
       <h2>
-        <button class='mr-2'>
+        <button class='mr-2 underline'>
           <Link href='./portifolio'>Clique aqui</Link>
         </button>
         para navegar por projetos, idéias e estudos.
