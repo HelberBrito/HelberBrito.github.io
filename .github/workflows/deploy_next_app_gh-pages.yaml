@@ -69,8 +69,8 @@ jobs:
       - name: anorcle/next-pages@v1.0
         uses: anorcle/next-pages@v1.0
         with:
-          inputDir: '/out'
-          outputDir: '/docs'
+          inputDir: 'out'
+          outputDir: 'docs'
         # faz o comit e o push no repositorio gh-pages
       - name: Log before anorcle
         run: ls -a
