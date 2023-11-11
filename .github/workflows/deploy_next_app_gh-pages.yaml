@@ -19,10 +19,10 @@ jobs:
     # configura os do container
     runs-on: ubuntu-latest
     
-    # configura diretorio de trabalho
-    defaults:
-      run:
-        working-directory: ./
+    # # configura diretorio de trabalho
+    # defaults:
+    #   run:
+    #     working-directory: ./
 
     # configura permições do GITHUB_TOKEN para o deploy no gh_pages
     permissions:
