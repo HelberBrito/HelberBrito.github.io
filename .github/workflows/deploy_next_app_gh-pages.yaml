@@ -63,7 +63,7 @@ jobs:
           cd ..
           mkdir workdir
           ls -a
-          cp -r HelberBritogithub.io/* workdir
+          cp -r HelberBrito.github.io/* workdir
           ls -a
           ls -a workdir
         # renomeia pastas do build do next
