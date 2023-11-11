@@ -85,7 +85,6 @@ jobs:
           git commit -m 'rebuild by anorcle/next-pages@v1.0'
           git push
 
-
 # JOB EM CASO DE ATUALIZAÇÃO NODE INCOMPATIVEL
   # # utiliza actions legado em caso de falha no build
   # build-with-legacy-node-18:
