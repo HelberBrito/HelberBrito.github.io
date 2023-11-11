@@ -10,4 +10,3 @@ git commit -m 'log'
 
 # Faz o push das alterações para o repositório remoto
 git push
-
