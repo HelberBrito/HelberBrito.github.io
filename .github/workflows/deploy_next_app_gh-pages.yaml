@@ -60,8 +60,6 @@ jobs:
         # acessa diretorio clonado
       - name: log diretorio de trabalho
         run: |
-          mkdir docs
-          cd ..
           mkdir -p workdir
           cp -r HelberBrito.github.io/* workdir
           ls -a
