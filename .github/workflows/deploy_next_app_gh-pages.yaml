@@ -61,7 +61,8 @@ jobs:
       - name: log diretorio de trabalho
         run: |
           mkdir -p workdir
-          cp -r HelberBrito.github.io/* workdir
+          ls -a
+          cp -r * workdir
           ls -a
         # renomeia pastas do build do next
       - name: anorcle/next-pages@v1.0
