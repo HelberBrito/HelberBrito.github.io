@@ -64,8 +64,8 @@ jobs:
       - name: Next Pages
         uses: anorcle/next-pages@v1.0
         with:
-          inputDir: '.'
-          outputDir: '.'
+          inputDir: './'
+          outputDir: './'
         # faz o comit e o push no repositorio gh-pages
       - name: Commit and push changes
         run: |
