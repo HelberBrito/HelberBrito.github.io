@@ -61,6 +61,7 @@ jobs:
       - name: log diretorio de trabalho
         run: |
           ls -a
+          mkdir out
           mv ./* ./out
           git reset .git
           git reset .github
@@ -68,8 +69,8 @@ jobs:
       - name: Next Pages
         uses: anorcle/next-pages@v1.0
         with:
-          inputDir: './out'
-          outputDir: './docs'
+          inputDir: '/out'
+          outputDir: '/docs'
         # faz o comit e o push no repositorio gh-pages
       - name: Commit and push changes
         run: |
