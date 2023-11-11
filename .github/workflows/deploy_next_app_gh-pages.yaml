@@ -57,12 +57,15 @@ jobs:
       #     restore-keys: |
       #       ${{ runner.os }}-node-
 
+        # acessa diretorio clonado
+      - name: cd HelberBrito.github.io/
+        run: cd HelberBrito.github.io/
         # renomeia pastas do build do next
       - name: Next Pages
         uses: anorcle/next-pages@v1.0
         with:
-          inputDir: 'HelberBrito.github.io/'
-          outputDir: 'HelberBrito.github.io/'
+          inputDir: '.'
+          outputDir: '.'
         # faz o comit e o push no repositorio gh-pages
       - name: Commit and push changes
         run: |
