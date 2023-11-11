@@ -58,8 +58,8 @@ jobs:
       #       ${{ runner.os }}-node-
 
         # acessa diretorio clonado
-      - name: cd HelberBrito.github.io/
-        run: cd HelberBrito.github.io/
+      - name: log diretorio de trabalho
+        run: ls -a
         # renomeia pastas do build do next
       - name: Next Pages
         uses: anorcle/next-pages@v1.0
