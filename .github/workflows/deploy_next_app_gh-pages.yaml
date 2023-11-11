@@ -63,7 +63,7 @@ jobs:
           cd ..
           ls -a
           mkdir -p out
-          cp HelberBrito.github.io/* out/
+          cp -r HelberBrito.github.io/* out/
         # renomeia pastas do build do next
       - name: anorcle/next-pages@v1.0
         uses: anorcle/next-pages@v1.0
