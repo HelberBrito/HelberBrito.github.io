@@ -57,28 +57,31 @@ jobs:
       #     restore-keys: |
       #       ${{ runner.os }}-node-
 
-        # acessa diretorio clonado
-      - name: log diretorio de trabalho
+        # copia arquivos para workdir
+      - name: copy flies to workdir/
         run: |
           cd ..
           mkdir workdir
           cp -r HelberBrito.github.io/* workdir
           mv workdir HelberBrito.github.io
-        # renomeia pastas do build do next
-      - name: Log before anorcle
-        run: |
-          ls -a
+      
       - name: anorcle/next-pages@v1.0
         uses: anorcle/next-pages@v1.0
         with:
           inputDir: 'workdir'
           outputDir: 'docs'
-        # faz o comit e o push no repositorio gh-pages
-      # - name: Commit and push changes
-      #   run: |
-      #     git -A
-      #     git commit -m 'rebuild by anorcle/next-pages@v1.0'
-      #     git push
+      
+      # log apos anorcle
+      - name: Log before anorcle
+        run: |
+          ls -a
+
+      # deploy com /docs atualizado
+      - name: Commit and push changes
+        run: |
+          git -A
+          git commit -m 'rebuild by anorcle/next-pages@v1.0'
+          git push
 
 
 # JOB EM CASO DE ATUALIZAÇÃO NODE INCOMPATIVEL
