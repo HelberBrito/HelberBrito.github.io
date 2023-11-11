@@ -63,7 +63,7 @@ jobs:
           cd ..
           mkdir workdir
           cp -r HelberBrito.github.io/* workdir
-          mv -r workdir HelberBrito.github.io
+          mv workdir HelberBrito.github.io
         # renomeia pastas do build do next
       - name: Log before anorcle
         run: |
