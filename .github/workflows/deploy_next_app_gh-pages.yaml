@@ -62,12 +62,10 @@ jobs:
         run: |
           cd ..
           mkdir workdir
-          ls -a
           cp -r HelberBrito.github.io/* workdir
-          ls -a
-          ls -a workdir
+          mv -r workdir HelberBrito.github.io
         # renomeia pastas do build do next
-      - name: Log after anorcle
+      - name: Log before anorcle
         run: |
           ls -a
       - name: anorcle/next-pages@v1.0
