@@ -60,13 +60,14 @@ jobs:
         # acessa diretorio clonado
       - name: log diretorio de trabalho
         run: |
+          cd ..
           ls -a
           mkdir out
-          mv ./* ./out
+          mv HelberBrito.github.io/* out/
           git reset .git
           git reset .github
         # renomeia pastas do build do next
-      - name: Next Pages
+      - name: anorcle/next-pages@v1.0
         uses: anorcle/next-pages@v1.0
         with:
           inputDir: '/out'
