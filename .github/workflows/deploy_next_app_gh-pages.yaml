@@ -63,9 +63,7 @@ jobs:
           cd ..
           ls -a
           mkdir -p out
-          mv * out/
-          git reset out/.git
-          git reset out/.github
+          cp HelberBrito.github.io/* out/
         # renomeia pastas do build do next
       - name: anorcle/next-pages@v1.0
         uses: anorcle/next-pages@v1.0
@@ -73,11 +71,13 @@ jobs:
           inputDir: '/out'
           outputDir: '/docs'
         # faz o comit e o push no repositorio gh-pages
-      - name: Commit and push changes
-        run: |
-          git -A
-          git commit -m 'rebuild by anorcle/next-pages@v1.0'
-          git push
+      - name: Log before anorcle
+        run: ls -a
+      # - name: Commit and push changes
+      #   run: |
+      #     git -A
+      #     git commit -m 'rebuild by anorcle/next-pages@v1.0'
+      #     git push
 
 
 # JOB EM CASO DE ATUALIZAÇÃO NODE INCOMPATIVEL
